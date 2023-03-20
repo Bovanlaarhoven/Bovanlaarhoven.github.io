@@ -27,6 +27,7 @@
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .card img{
@@ -54,5 +55,24 @@
 }
 
 .card .Links img:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+    text-decoration: 0;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    color: #015aff;
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin: 20px 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background: #015aff;
+    color: #fff;
     transform: scale(1.1);
 }
