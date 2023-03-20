@@ -31,7 +31,8 @@
 }
 
 .Profile{
-    border-style: double;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .card img{
