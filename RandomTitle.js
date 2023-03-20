@@ -15,5 +15,8 @@ const titleOptions = [
     "__index is noob",
     "Idk",
 ];
-const randomIndex = Math.floor(Math.random() * titleOptions.length);
-document.title = titleOptions[randomIndex];
+
+for (var i = 0; i < Infinity; i++) {
+    const randomIndex = Math.floor(Math.random() * titleOptions.length);
+    document.title = titleOptions[randomIndex];
+}
