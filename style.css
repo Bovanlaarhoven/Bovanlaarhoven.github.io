@@ -52,12 +52,12 @@
     width: 40px;
     border-radius: 50%;
     margin: 10px, 5px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     border-color: white;
 }
 
 .card .Links img:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .btn{
