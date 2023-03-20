@@ -67,7 +67,7 @@
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
-    background: #fff;
+    background: linear-gradient(white, white), padding-box, linear-gradient(90deg, darkblue, #015aff);
     color: #015aff;
     padding: 10px 10px;
     border-radius: 30px;
