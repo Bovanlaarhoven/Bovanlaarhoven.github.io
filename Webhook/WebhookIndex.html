@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <meta name="description" content="omg embed website">
+    <link rel="stylesheet" href="WebhookStyle.css">
+<body>
+    <div class="container">
+        <div class="card" data-tilt>
+            <input type="text" id="url-input" placeholder="Enter webhook URL">
+            <input type="text" id="text-input" placeholder="Enter text here">
+            <button onclick="sendWebhook()">Send Webhook</button>
+            <a href="../index.html" class="btn">Go back</a>
+        </div>
+    </div>
+    <script src="../Tilt.js"></script>
+    <script src="../RandomTitle.js"></script>
+    <script>
+        function sendWebhook() {
+        const url = document.getElementById('url-input').value;
+        const data = { message: document.getElementById('text-input').value };
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => {
+            if (!response.ok) {
+                throw new Error('Webhook request failed.');
+            }
+            console.log('Webhook request successful:', response);
+            })
+            .catch(error => {
+            console.error('Webhook request error:', error);
+            alert('Error sending webhook: ' + error.message);
+            });
+        }
+    </script>
+</body>
+</html>
