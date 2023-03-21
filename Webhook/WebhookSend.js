@@ -1,7 +1,7 @@
 function sendWebhook() {
-    const url = 'https://example.com/webhook';
+    const url = document.getElementById('url-input').value;
     const data = { message: document.getElementById('text-input').value };
-
+  
     fetch(url, {
       method: 'POST',
       headers: {
@@ -16,3 +16,4 @@ function sendWebhook() {
         console.error('Webhook request error:', error);
       });
   }
+  
