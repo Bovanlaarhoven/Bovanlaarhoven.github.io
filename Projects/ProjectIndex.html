@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <meta name="description" content="omg embed website">
+    <link rel="stylesheet" href="ProjectStyle.css">
+<body>
+    <div class="container">
+        <div class="card" data-tilt>
+            <h1 class="TextTitle">My GitHub Projects</h1>
+            <ul id="projects"></ul>
+            <script>
+                fetch("https://api.github.com/users/Robobo2022/repos")
+                  .then(response => response.json())
+                  .then(data => {
+                    const projectsList = document.getElementById("projects");
+                    data.forEach(repo => {
+                      const li = document.createElement("li");
+                      const a = document.createElement("a");
+                      a.href = repo.html_url;
+                      a.textContent = repo.name;
+                      li.appendChild(a);
+                      projectsList.appendChild(li);
+                    });
+                  });
+              </script>
+        </div>
+    </div>
+    <script src="Tilt.js"></script>
+    <script src="RandomTitle.js"></script>
+</body>
+</html>
+
