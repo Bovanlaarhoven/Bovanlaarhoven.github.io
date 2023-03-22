@@ -49,12 +49,3 @@
 .btn:hover{
     transform: scale(1.1);
 }
-
-.Credits {
-    font-size: 10px;
-    color: white;
-    margin-top: 10px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
