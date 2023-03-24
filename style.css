@@ -48,13 +48,6 @@
     max-width: 330px;
 }
 
-.card .Links img{
-    width: 50px;
-    margin: 10px, 10px;
-    transition: transform 0.3s ease-in-out;
-    border-color: white;
-}
-
 .card .Links img:hover{
     transform: scale(1.3);
 }
