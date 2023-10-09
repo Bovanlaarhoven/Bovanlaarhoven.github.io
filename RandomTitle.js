@@ -12,8 +12,15 @@ const titleOptions = [
     "Rofl",
     "Tönka",
     "Lüh pussy boi",
-    "__index is noob",
     "Idk",
+    "I am a bot",
+    "I am not a bot",
+    "Okay what the flip",
+    "no",
+    "yes",
+    "no u",
+    "yes u",
+    "ok",
 ];
 
 const randomIndex = Math.floor(Math.random() * titleOptions.length);

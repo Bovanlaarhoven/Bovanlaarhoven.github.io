@@ -85,3 +85,10 @@
 .Profile:hover {
     transform: scale(1.1);
 }
+
+.card p2{
+    font-size: 20px;
+    margin: 5px;
+    text-align: flex;
+    max-width: 230px;
+}
